@@ -1,7 +1,5 @@
 #include <RVC/Camera/CameraBase.h>
 
-#include <opencv2/opencv.hpp>
-
 #include "../Src/ImageSize.h"
 
 int main(int argc, char *argv[])

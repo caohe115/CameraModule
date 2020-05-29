@@ -18,14 +18,13 @@
 #include <pylon/usb/BaslerUsbInstantCamera.h>
 #include <pylon/usb/_BaslerUsbCameraParams.h>
 
-#include <opencv2/opencv.hpp>
-
 #include "CImageEventHandler.h"
 #include "ImageSize.h"
 
 typedef Pylon::CBaslerUsbInstantCamera Camera_t;
 
-struct BaslerCameraSystem : public CameraSystemBase {
+struct BaslerCameraSystem : public CameraSystemBase
+{
     BaslerCameraSystem();
     ~BaslerCameraSystem();
     int Initialize();
@@ -34,7 +33,8 @@ struct BaslerCameraSystem : public CameraSystemBase {
     CameraBasePtr Create(const char *sn, const char *type);
 };
 
-struct BaslerCameraUSB : public CameraBase {
+struct BaslerCameraUSB : public CameraBase
+{
     BaslerCameraUSB(const char *sn);
     ~BaslerCameraUSB();
 
